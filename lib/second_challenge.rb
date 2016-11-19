@@ -8,6 +8,12 @@ def second_challenge
 
   #code your solution here!
 
-  
+foods = []
 
+  groceries.each do |key, value|
+    if key == :vegetable || :dairy || :meat || :grains
+      foods.push(value)
+    end
+  end
+  foods.flatten!
 end
